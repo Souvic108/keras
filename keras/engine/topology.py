@@ -2527,7 +2527,7 @@ class Container(Layer):
             ImportError: If h5py is not available.
         """
         if h5py is None:
-            raise ImportError('`save_weights` requires h5py.')
+            raise ImportError('hhh `save_weights` requires h5py.')
         # If file exists and should not be overwritten:
         if not overwrite and os.path.isfile(filepath):
             proceed = ask_to_proceed_with_overwrite(filepath)
@@ -2562,7 +2562,7 @@ class Container(Layer):
             ImportError: If h5py is not available.
         """
         if h5py is None:
-            raise ImportError('`load_weights` requires h5py.')
+            raise ImportError('hhh `load_weights` requires h5py.')
         f = h5py.File(filepath, mode='r')
         if 'layer_names' not in f.attrs and 'model_weights' in f:
             f = f['model_weights']
